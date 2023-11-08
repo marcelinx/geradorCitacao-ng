@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Gerador de Citações</h1>
+  <button (click)="getRandomQuote()">Gerar Citação</button>
+
+  <div class="quote-box" *ngFor="let quote of quotes">
+    <p class="quote-text">{{ quote.content }}</p>
+    <p class="author">- {{ quote.author }}</p>
+  </div>
+</div>
